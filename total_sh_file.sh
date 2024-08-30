@@ -616,7 +616,7 @@ python -m run.concat \
     --prompt "당신은 유능한 AI 어시스턴트입니다. 사용자가 요청하는 부분을 친절하고 정확하게 답변해주세요." \
     --model_type gemma\
     --prompt_type summary_concat_tg\
-    --output ./트럼프저격수.json\
+    --output ./진짜로마지막.json\
     --concat_file_list "/inference/파퀴아오_3단케이크2.json" "/inference/트럼프합체.json" "/inference/볼카노프스키_4단케이크.json"
 
 
