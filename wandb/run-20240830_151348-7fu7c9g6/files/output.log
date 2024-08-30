@@ -1,0 +1,81 @@
+
+  0%|                                                                                                                                                                  | 0/720 [00:00<?, ?it/s]The input hidden states seems to be silently casted in float32, this might be related to the fact you have upcasted embedding or layer norm layers in float32. We will cast back the input in torch.bfloat16.
+Starting epoch 0...
+Traceback (most recent call last):
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mnt/ssd2/jeong/GCU_ISNLP_B/run/solar_train.py", line 232, in <module>
+    exit(train_model(args))
+  File "/mnt/ssd2/jeong/GCU_ISNLP_B/run/solar_train.py", line 217, in train_model
+    trainer.train()
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/transformers/trainer.py", line 1938, in train
+    return inner_training_loop(
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/accelerate/utils/memory.py", line 146, in decorator
+    return function(batch_size, *args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/transformers/trainer.py", line 2279, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/transformers/trainer.py", line 3318, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/transformers/trainer.py", line 3363, in compute_loss
+    outputs = model(**inputs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/peft/peft_model.py", line 1577, in forward
+    return self.base_model(
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/peft/tuners/tuners_utils.py", line 188, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/accelerate/hooks.py", line 169, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 1141, in forward
+    outputs = self.model(
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/accelerate/hooks.py", line 169, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 932, in forward
+    layer_outputs = self._gradient_checkpointing_func(
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/_compile.py", line 24, in inner
+    return torch._dynamo.disable(fn, recursive)(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 451, in _fn
+    return fn(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/_dynamo/external_utils.py", line 36, in inner
+    return fn(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/utils/checkpoint.py", line 487, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/autograd/function.py", line 598, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/utils/checkpoint.py", line 262, in forward
+    outputs = run_function(*args)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/accelerate/hooks.py", line 169, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 677, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/accelerate/hooks.py", line 169, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 500, in forward
+    attn_output = _flash_attention_forward(
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/transformers/modeling_flash_attention_utils.py", line 193, in _flash_attention_forward
+    query_states, key_states, value_states, indices_q, cu_seq_lens, max_seq_lens = _upad_input(
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/transformers/modeling_flash_attention_utils.py", line 99, in _upad_input
+    indices_k, cu_seqlens_k, max_seqlen_in_batch_k = _get_unpad_data(attention_mask)
+  File "/home/nlplab/anaconda3/envs/GCU_ISNLP_B/lib/python3.9/site-packages/transformers/modeling_flash_attention_utils.py", line 50, in _get_unpad_data
+    indices = torch.nonzero(attention_mask.flatten(), as_tuple=False).flatten()
+KeyboardInterrupt

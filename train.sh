@@ -3,7 +3,7 @@ export NCCL_IB_DISABLE=1
 
 # heegyu/llama-2-ko-7b-chat, MLP-KTLim/llama-3-Korean-Bllossom-8B, beomi/Solar-Ko-Recovery-11B, beomi/Llama-3-Open-Ko-8B
 
-python -m run.train_ori \
+python -m run.train \
   --model_id beomi/Llama-3-Open-Ko-8B \
   --device cuda:0\
   --epoch 12\
