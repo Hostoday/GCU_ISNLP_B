@@ -9,7 +9,7 @@ from torch.optim import AdamW
 from transformers import (AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, 
                           Trainer, TrainingArguments, get_cosine_schedule_with_warmup, 
                           get_linear_schedule_with_warmup, EarlyStoppingCallback, EvalPrediction)
-from trl import SFTTrainer, SFTConfig
+from trl import SFTTrainer
 from peft import prepare_model_for_kbit_training, LoraConfig, get_peft_model, TaskType
 from src.data import CustomDataset, DataCollatorForSupervisedDataset
 from src.utils import set_random_seed
