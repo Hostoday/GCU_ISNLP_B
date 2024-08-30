@@ -192,7 +192,11 @@ def main(args):
 
         batch_start_idx += len(generated_texts)
 
-    with open(f"inference/{args.output}", "w", encoding="utf-8") as f:
+    output_dir = "inference"
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    with open(f"{output_dir}/{args.output}", "w", encoding="utf-8") as f:
         f.write(json.dumps(result, ensure_ascii=False, indent=4))
 
 
