@@ -222,7 +222,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type analysis_prompt_v3 \
     --output ./웃쨔고양아.json\
-    --concat_file_list "/inference/기대되는고양이2-3.json" "/inference/하하.json"
+    --concat_file_list "./inference/기대되는고양이2-3.json" "./inference/하하.json"
 
 python -m run.concat \
     --model_id maywell/EXAONE-3.0-7.8B-Instruct-Llamafied\
@@ -233,7 +233,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type analysis_prompt_v2_se2 \
     --output ./a츄르먹자2.json\
-    --concat_file_list "/inference/힘쎈고양이야4-4.json" "/inference/힘쎈고양이야4-2.json" "/inference/하하.json" "/inference/고양이야.json" "/inference/상받을고양이again2.json" "/inference/힘쎈고양이야.json" "/inference/힘쎈고양이야1-2.json" "/inference/복딩이.json"
+    --concat_file_list "./inference/힘쎈고양이야4-4.json" "./inference/힘쎈고양이야4-2.json" "./inference/하하.json" "./inference/고양이야.json" "./inference/상받을고양이again2.json" "./inference/힘쎈고양이야.json" "./inference/힘쎈고양이야1-2.json" "./inference/복딩이.json"
 
 python -m run.concat \
     --model_id maywell/EXAONE-3.0-7.8B-Instruct-Llamafied\
@@ -244,7 +244,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type analysis_prompt_v2_se2 \
     --output ./굴먹는양푸니들.json\
-    --concat_file_list "/inference/힘쎈고양이야4-2.json" "/inference/힘쎈고양이야1-2.json" "/inference/하하.json" "/inference/힘쎈고양이야4-4.json" "/inference/상받을고양이again.json"
+    --concat_file_list "./inference/힘쎈고양이야4-2.json" "./inference/힘쎈고양이야1-2.json" "./inference/하하.json" "./inference/힘쎈고양이야4-4.json" "./inference/상받을고양이again.json"
 
 
 #애옹 -->옹박사 예정
@@ -257,7 +257,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./애옹이랑라마랑.json\
-    --concat_file_list "/inference/웃쨔고양아.json" "/inference/pasad3_v2.json" "/inference/pasad33_v2.json" "/inference/기대되는고양이2-3.json" "/inference/웃는고양.json" "/inference/L문1.json"
+    --concat_file_list "./inference/웃쨔고양아.json" "./inference/pasad3_v2.json" "./inference/pasad33_v2.json" "./inference/기대되는고양이2-3.json" "./inference/웃는고양.json" "./inference/L문1.json"
 
 #고양이 모음 라마로돌림 -- 옹석사
 python -m run.concat \
@@ -268,7 +268,7 @@ python -m run.concat \
     --prompt "당신은 유능한 AI 어시스턴트입니다. 사용자가 요청하는 부분을 정확하게 답변해주세요." \
     --model_type gemma\
     --output ./애옹이랑라마랑2.json\
-    --concat_file_list "/inference/pasad3_v2.json" "/inference/pasad33_v2.json" "/inference/기대되는고양이2.json" "/inference/기대되는고양이2-3.json" "/inference/웃는고양.json"
+    --concat_file_list "./inference/pasad3_v2.json" "./inference/pasad33_v2.json" "./inference/기대되는고양이2.json" "./inference/기대되는고양이2-3.json" "./inference/웃는고양.json"
 
 #애옹이 코로나제거 --> SI
 python -m run.concat \
@@ -280,7 +280,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./애옹이코로나제거에스까르.json\
-    --concat_file_list "/inference/힘쎈고양이야4-2.json" "/inference/웃쨔고양아.json" "/inference/pasad3_v2.json" "/inference/웃는고양2.json" "/inference/L문1.json"
+    --concat_file_list "./inference/힘쎈고양이야4-2.json" "./inference/웃쨔고양아.json" "./inference/pasad3_v2.json" "./inference/웃는고양2.json" "./inference/L문1.json"
 
 
 python -m run.concat \
@@ -292,7 +292,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./애옹이.json\
-    --concat_file_list "/inference/웃쨔고양아.json" "/inference/pasad3_v2.json" "/inference/pasad33_v2.json" "/inference/기대되는고양이2-3.json" "/inference/웃는고양.json" "/inference/L문1.json"
+    --concat_file_list "./inference/웃쨔고양아.json" "./inference/pasad3_v2.json" "./inference/pasad33_v2.json" "./inference/기대되는고양이2-3.json" "./inference/웃는고양.json" "./inference/L문1.json"
 
 #애옹이 업그레이드 --> 애옹애옹
 python -m run.concat \
@@ -304,7 +304,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./애옹쓰.json\
-    --concat_file_list "/inference/애옹이.json" "/inference/L문2.json" "/inference/L메로나3.json" "/inference/yooyoyoyo.json" "/inference/만년2인자.json"
+    --concat_file_list "./inference/애옹이.json" "./inference/L문2.json" "./inference/L메로나3.json" "./inference/yooyoyoyo.json" "./inference/만년2인자.json"
 
 #고양이 합친거 점수올리기 --> 옹옹옹
 python -m run.concat \
@@ -315,7 +315,7 @@ python -m run.concat \
     --prompt "당신은 유능한 AI 어시스턴트입니다. 사용자가 요청하는 부분을 정확하게 답변해주세요." \
     --model_type gemma\
     --output ./고양이집합.json\
-    --concat_file_list  "/inference/애옹쓰.json" "/inference/애옹이.json" "/inference/애옹이랑라마랑.json" "/inference/애옹이랑라마랑2.json" "/inference/기대되는고양이2.json"
+    --concat_file_list  "./inference/애옹쓰.json" "./inference/애옹이.json" "./inference/애옹이랑라마랑.json" "./inference/애옹이랑라마랑2.json" "./inference/기대되는고양이2.json"
 
 # 고양이 엘지로 합치기 --> ㅇㅅㅇ
 python -m run.concat \
@@ -327,7 +327,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./고양이손들고서있어.json\
-    --concat_file_list "/inference/애옹쓰.json" "/inference/애옹이.json" "/inference/애옹이랑라마랑.json" "/inference/애옹이랑라마랑2.json" "/inference/기대되는고양이2.json"
+    --concat_file_list "./inference/애옹쓰.json" "./inference/애옹이.json" "./inference/애옹이랑라마랑.json" "./inference/애옹이랑라마랑2.json" "./inference/기대되는고양이2.json"
 
 #고양이로 1등 --> 혼나자
 python -m run.concat \
@@ -339,7 +339,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./고양이혼나자.json\
-    --concat_file_list "/inference/애옹쓰.json" "/inference/고양이집합.json" "/inference/애옹이.json" "/inference/pasad3_v2.json" "/inference/고양이손들고서있어.json"
+    --concat_file_list "./inference/애옹쓰.json" "./inference/고양이집합.json" "./inference/애옹이.json" "./inference/pasad3_v2.json" "./inference/고양이손들고서있어.json"
 
 python -m run.concat \
     --model_id maywell/EXAONE-3.0-7.8B-Instruct-Llamafied\
@@ -350,7 +350,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./성심당_1단망고_케이크.json\
-    --concat_file_list "/inference/힘쎈고양이야4-2.json" "/inference/힘쎈고양이야3-2.json" "/inference/힘쎈고양이야3.json" "/inference/기대되는고양이2-3.json" "/inference/L두리안1.json" 
+    --concat_file_list "./inference/힘쎈고양이야4-2.json" "./inference/힘쎈고양이야3-2.json" "./inference/힘쎈고양이야3.json" "./inference/기대되는고양이2-3.json" "./inference/L두리안1.json" 
 
 python -m run.concat \
     --model_id maywell/EXAONE-3.0-7.8B-Instruct-Llamafied\
@@ -361,7 +361,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./성심당_2단두리안_케이크3.json\
-    --concat_file_list "/inference/힘쎈고양이야4-4.json" "/inference/힘쎈고양이야4-2.json" "/inference/성심당_1단망고_케이크.json" 
+    --concat_file_list "./inference/힘쎈고양이야4-4.json" "./inference/힘쎈고양이야4-2.json" "./inference/성심당_1단망고_케이크.json" 
 
 python -m run.concat \
     --model_id maywell/EXAONE-3.0-7.8B-Instruct-Llamafied\
@@ -372,7 +372,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type analysis_prompt_v2_se2 \
     --output ./양푸니들.json\
-    --concat_file_list "/inference/힘쎈고양이야4-2.json" "/inference/힘쎈고양이야1-2.json" "/inference/하하.json" "/inference/상받을고양이again.json"
+    --concat_file_list "./inference/힘쎈고양이야4-2.json" "./inference/힘쎈고양이야1-2.json" "./inference/하하.json" "./inference/상받을고양이again.json"
 
 python -m run.concat \
     --model_id maywell/EXAONE-3.0-7.8B-Instruct-Llamafied\
@@ -383,7 +383,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./성심당_2단두리안_케이크4.json\
-    --concat_file_list "/inference/양푸니들.json" "/inference/성심당_1단망고_케이크.json" "/inference/힘쎈고양이야4-2.json" "/inference/힘쎈고양이야4-4.json" 
+    --concat_file_list "./inference/양푸니들.json" "./inference/성심당_1단망고_케이크.json" "./inference/힘쎈고양이야4-2.json" "./inference/힘쎈고양이야4-4.json" 
 
 #최강고양이 변경 돌려야햐 --> 족장 제출
 python -m run.concat \
@@ -395,7 +395,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./고양이족장.json\
-    --concat_file_list "/inference/양푸니들.json" "/inference/성심당_1단망고_케이크.json" "/inference/애옹이코로나제거에스까르.json" "/inference/힘쎈고양이야4-4.json"
+    --concat_file_list "./inference/양푸니들.json" "./inference/성심당_1단망고_케이크.json" "./inference/애옹이코로나제거에스까르.json" "./inference/힘쎈고양이야4-4.json"
 
 #최강고양이 -- 지켜
 python -m run.concat \
@@ -407,7 +407,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./고양이대장.json\
-    --concat_file_list "/inference/양푸니들.json" "/inference/성심당_1단망고_케이크.json" "/inference/고양이혼나자.json" "/inference/힘쎈고양이야4-2.json"
+    --concat_file_list "./inference/양푸니들.json" "./inference/성심당_1단망고_케이크.json" "./inference/고양이혼나자.json" "./inference/힘쎈고양이야4-2.json"
 
 python -m run.concat \
     --model_id beomi/Llama-3-Open-Ko-8B\
@@ -418,7 +418,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type analysis_prompt_v2_se2\
     --output ./파퀴아오_3단케이크2.json\
-    --concat_file_list "/inference/굴먹는양푸니들.json" "/inference/힘쎈고양이야4-4.json" "/inference/성심당_2단두리안_케이크3.json" "/inference/애옹이코로나제거에스까르.json"
+    --concat_file_list "./inference/굴먹는양푸니들.json" "./inference/힘쎈고양이야4-4.json" "./inference/성심당_2단두리안_케이크3.json" "./inference/애옹이코로나제거에스까르.json"
 
 #높은애들 합쳐 --> 미오치치
 python -m run.concat \
@@ -430,7 +430,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./미오치치고양이.json\
-    --concat_file_list "/inference/고양이대장.json" "/inference/고양이족장.json" "/inference/힘쎈고양이야4-4.json" "/inference/성심당_2단두리안_케이크3.json" "/inference/애옹이코로나제거에스까르.json"
+    --concat_file_list "./inference/고양이대장.json" "./inference/고양이족장.json" "./inference/힘쎈고양이야4-4.json" "./inference/성심당_2단두리안_케이크3.json" "./inference/애옹이코로나제거에스까르.json"
 
 #지켜 업그레이드 은가누고양이 돌려야함 --> 은가누
 python -m run.concat \
@@ -442,19 +442,19 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./은가누고양이.json\
-    --concat_file_list "/inference/양푸니들.json" "/inference/성심당_1단망고_케이크.json" "/inference/힘쎈고양이야4-4.json" "/inference/힘쎈고양이야4-2.json" "/inference/애옹이코로나제거에스까르.json"
+    --concat_file_list "./inference/양푸니들.json" "./inference/성심당_1단망고_케이크.json" "./inference/힘쎈고양이야4-4.json" "./inference/힘쎈고양이야4-2.json" "./inference/애옹이코로나제거에스까르.json"
 
 #이야 --> 야이
 python -m run.ensemble_inf \
    --device 'cuda:0' \
    --output /이야.json\
-   --concat_file_list "/inference/미오치치고양이.json" "/inference/고양이족장.json" "/inference/은가누고양이.json" "/inference/양푸니들.json" "/inference/힘쎈고양이야4-4.json"
+   --concat_file_list "./inference/미오치치고양이.json" "./inference/고양이족장.json" "./inference/은가누고양이.json" "./inference/양푸니들.json" "./inference/힘쎈고양이야4-4.json"
 
 #150 깔끔한 emsemble
 python -m run.ensemble_inf \
    --device 'cuda:0' \
    --output /깔끔.json\
-   --concat_file_list "/inference/굴먹는양푸니들.json" "/inference/힘쎈고양이야4-2.json" "/inference/L메로나3.json"
+   --concat_file_list "./inference/굴먹는양푸니들.json" "./inference/힘쎈고양이야4-2.json" "./inference/L메로나3.json"
 
 #ensemble 모여라 --> 옹교수
 python -m run.concat \
@@ -466,7 +466,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./옹교수.json\
-    --concat_file_list "/inference/미오치치고양이.json" "/inference/이야.json" "/inference/깔끔.json"
+    --concat_file_list "./inference/미오치치고양이.json" "./inference/이야.json" "./inference/깔끔.json"
 
 python -m run.concat \
     --model_id maywell/EXAONE-3.0-7.8B-Instruct-Llamafied\
@@ -477,7 +477,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./z살려.json\
-    --concat_file_list "/inference/옹교수.json" "/inference/굴먹는양푸니들.json" "/inference/복딩이.json"
+    --concat_file_list "./inference/옹교수.json" "./inference/굴먹는양푸니들.json" "./inference/복딩이.json"
 
 # 옹교수 + 굴먹는양푸니들 + 깔끔 (essemble한것들) -> 옹근 0 제출
 python -m run.concat \
@@ -489,7 +489,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./옹근0.json\
-    --concat_file_list "/inference/옹교수.json" "/inference/굴먹는양푸니들.json" "/inference/깔끔.json"
+    --concat_file_list "./inference/옹교수.json" "./inference/굴먹는양푸니들.json" "./inference/깔끔.json"
 
 # 옹근0 llama버전 -> 옹옹옹옹옹 -> bleurt good 46.26
 python -m run.concat \
@@ -500,7 +500,7 @@ python -m run.concat \
     --prompt "당신은 유능한 AI 어시스턴트입니다. 사용자가 요청하는 부분을 친절하고 정확하게 답변해주세요." \
     --model_type gemma\
     --output ./옹옹옹옹옹.json\
-    --concat_file_list "/inference/옹교수.json" "/inference/굴먹는양푸니들.json" "/inference/깔끔.json"
+    --concat_file_list "./inference/옹교수.json" "./inference/굴먹는양푸니들.json" "./inference/깔끔.json"
 
 #진짜 끝내자 옹근0 + 옹옹옹옹옹 + 옹옹이들 + 성심당_2단두리안_케이크4 --> 짬뽕 -->루지 높음
 python -m run.concat \
@@ -512,13 +512,13 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./z크으아.json\
-    --concat_file_list "/inference/옹근0.json" "/inference/옹옹옹옹옹.json" "/inference/성심당_2단두리안_케이크4.json"
+    --concat_file_list "./inference/옹근0.json" "./inference/옹옹옹옹옹.json" "./inference/성심당_2단두리안_케이크4.json"
 
 #doo 로 제출
 python -m run.ensemble_inf \
    --device 'cuda:0' \
    --output /z도와줘.json\
-   --concat_file_list "/inference/z살려.json" "/inference/복딩이.json" "/inference/힘쎈고양이야4-4.json"
+   --concat_file_list "./inference/z살려.json" "./inference/복딩이.json" "./inference/힘쎈고양이야4-4.json"
 
 # 라마로 짬뽕, 미오치치, 굴먹양푸니 합.. -> 하나로마트
 python -m run.concat \
@@ -529,7 +529,7 @@ python -m run.concat \
     --prompt "당신은 유능한 AI 어시스턴트입니다. 사용자가 요청하는 부분을 친절하고 정확하게 답변해주세요." \
     --model_type gemma\
     --output ./라마로마무리.json\
-    --concat_file_list "/inference/z크으아.json" "/inference/미오치치고양이.json" "/inference/굴먹는양푸니들.json"
+    --concat_file_list "./inference/z크으아.json" "./inference/미오치치고양이.json" "./inference/굴먹는양푸니들.json"
 
 #총출동 prompt 변경 -> 별
 python -m run.concat \
@@ -541,7 +541,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./z총출동별.json\
-    --concat_file_list "/inference/라마로마무리.json" "/inference/z도와줘.json" "/inference/굴먹는양푸니들.json"
+    --concat_file_list "./inference/라마로마무리.json" "./inference/z도와줘.json" "./inference/굴먹는양푸니들.json"
 
 python -m run.concat \
     --model_id maywell/EXAONE-3.0-7.8B-Instruct-Llamafied\
@@ -552,50 +552,50 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./z총출동.json\
-    --concat_file_list "/inference/z도와줘.json" "/inference/라마로마무리.json" "/inference/굴먹는양푸니들.json"
+    --concat_file_list "./inference/z도와줘.json" "./inference/라마로마무리.json" "./inference/굴먹는양푸니들.json"
 
 # 총출동 앙상블 -> 지구
 python -m run.ensemble_inf \
    --device 'cuda:0' \
    --output /총총출동.json\
-   --concat_file_list "/inference/z총출동.json" "/inference/z총출동별.json"
+   --concat_file_list "./inference/z총출동.json" "./inference/z총출동별.json"
 
 python -m run.ensemble_inf \
    --device 'cuda:0' \
    --output /직화장인.json\
-   --concat_file_list "/inference/총총출동.json" "/inference/굴먹는양푸니들.json" "/inference/고양이대장.json"
+   --concat_file_list "./inference/총총출동.json" "./inference/굴먹는양푸니들.json" "./inference/고양이대장.json"
 
 # 제출완
 python -m run.ensemble_inf \
    --device 'cuda:0' \
    --output /방이돈가4.json\
-   --concat_file_list "/inference/z총출동.json" "/inference/굴먹는양푸니들.json" "/inference/직화장인.json" #"/inference/양푸니들.json" "/inference/a츄르먹자2.json" 
+   --concat_file_list "./inference/z총출동.json" "./inference/굴먹는양푸니들.json" "./inference/직화장인.json" #"./inference/양푸니들.json" "./inference/a츄르먹자2.json" 
 # # 
 
 # 제출완
 python -m run.ensemble_inf \
    --device 'cuda:0' \
    --output /방이돈가8.json\
-   --concat_file_list "/inference/z총출동.json" "/inference/직화장인.json" # "/inference/직화장인.json" #"/inference/양푸니들.json" "/inference/a츄르먹자2.json" 
+   --concat_file_list "./inference/z총출동.json" "./inference/직화장인.json" # "./inference/직화장인.json" #"./inference/양푸니들.json" "./inference/a츄르먹자2.json" 
 
 # 제출완
 python -m run.ensemble_inf \
    --device 'cuda:0' \
    --output /방이돈가2.json\
-   --concat_file_list "/inference/총총출동.json" "/inference/굴먹는양푸니들.json" "/inference/직화장인.json" #"/inference/양푸니들.json"
+   --concat_file_list "./inference/총총출동.json" "./inference/굴먹는양푸니들.json" "./inference/직화장인.json" #"./inference/양푸니들.json"
 # 60.65
 
 # 제출완
 python -m run.ensemble_inf \
    --device 'cuda:0' \
    --output /방이돈가3.json\
-   --concat_file_list "/inference/총총출동.json" "/inference/굴먹는양푸니들.json" "/inference/직화장인.json" #"/inference/양푸니들.json" "/inference/a츄르먹자2.json" 
+   --concat_file_list "./inference/총총출동.json" "./inference/굴먹는양푸니들.json" "./inference/직화장인.json" #"./inference/양푸니들.json" "./inference/a츄르먹자2.json" 
 # # 
 
 python -m run.ensemble_inf \
    --device 'cuda:0' \
    --output /트럼프합체.json\
-   --concat_file_list "/inference/z총출동.json" "/inference/방이돈가8.json" "/inference/굴먹는양푸니들.json"
+   --concat_file_list "./inference/z총출동.json" "./inference/방이돈가8.json" "./inference/굴먹는양푸니들.json"
 
 python -m run.concat \
     --model_id beomi/Llama-3-Open-Ko-8B\
@@ -606,7 +606,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./볼카노프스키_4단케이크.json\
-    --concat_file_list "/inference/방이돈가2.json" "/inference/직화장인.json" "/inference/방이돈가3.json" "/inference/방이돈가4.json"
+    --concat_file_list "./inference/방이돈가2.json" "./inference/직화장인.json" "./inference/방이돈가3.json" "./inference/방이돈가4.json"
 
 python -m run.concat \
     --model_id maywell/EXAONE-3.0-7.8B-Instruct-Llamafied\
@@ -617,7 +617,7 @@ python -m run.concat \
     --model_type gemma\
     --prompt_type summary_concat_tg\
     --output ./진짜로마지막.json\
-    --concat_file_list "/inference/파퀴아오_3단케이크2.json" "/inference/트럼프합체.json" "/inference/볼카노프스키_4단케이크.json"
+    --concat_file_list "./inference/파퀴아오_3단케이크2.json" "./inference/트럼프합체.json" "./inference/볼카노프스키_4단케이크.json"
 
 
 
