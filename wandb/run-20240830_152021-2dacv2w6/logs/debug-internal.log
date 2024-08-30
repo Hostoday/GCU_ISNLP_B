@@ -121,3 +121,83 @@
 2024-08-30 15:20:28,863 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: poll_exit
 2024-08-30 15:20:28,991 INFO    Thread-12 :2187266 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/config.yaml
 2024-08-30 15:20:29,991 INFO    Thread-12 :2187266 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/output.log
+2024-08-30 15:20:31,887 INFO    SenderThread:2187266 [sender.py:transition_state():614] send defer: 8
+2024-08-30 15:20:31,887 DEBUG   SenderThread:2187266 [sender.py:send_request():406] send_request: poll_exit
+2024-08-30 15:20:31,887 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: defer
+2024-08-30 15:20:31,887 INFO    HandlerThread:2187266 [handler.py:handle_request_defer():184] handle defer: 8
+2024-08-30 15:20:31,887 DEBUG   SenderThread:2187266 [sender.py:send_request():406] send_request: defer
+2024-08-30 15:20:31,887 INFO    SenderThread:2187266 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-08-30 15:20:31,887 INFO    SenderThread:2187266 [job_builder.py:build():440] Attempting to build job artifact
+2024-08-30 15:20:31,888 INFO    SenderThread:2187266 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-08-30 15:20:31,888 WARNING SenderThread:2187266 [job_builder.py:_log_if_verbose():274] No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2024-08-30 15:20:31,888 INFO    SenderThread:2187266 [sender.py:transition_state():614] send defer: 9
+2024-08-30 15:20:31,888 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: defer
+2024-08-30 15:20:31,888 INFO    HandlerThread:2187266 [handler.py:handle_request_defer():184] handle defer: 9
+2024-08-30 15:20:31,888 DEBUG   SenderThread:2187266 [sender.py:send_request():406] send_request: defer
+2024-08-30 15:20:31,888 INFO    SenderThread:2187266 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-08-30 15:20:31,888 INFO    SenderThread:2187266 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-08-30 15:20:31,992 INFO    Thread-12 :2187266 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/output.log
+2024-08-30 15:20:31,992 INFO    SenderThread:2187266 [dir_watcher.py:finish():388] scan: /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files
+2024-08-30 15:20:31,992 INFO    SenderThread:2187266 [dir_watcher.py:finish():402] scan save: /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/wandb-summary.json wandb-summary.json
+2024-08-30 15:20:31,992 INFO    SenderThread:2187266 [dir_watcher.py:finish():402] scan save: /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/conda-environment.yaml conda-environment.yaml
+2024-08-30 15:20:31,992 INFO    SenderThread:2187266 [dir_watcher.py:finish():402] scan save: /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/output.log output.log
+2024-08-30 15:20:31,992 INFO    SenderThread:2187266 [dir_watcher.py:finish():402] scan save: /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/wandb-metadata.json wandb-metadata.json
+2024-08-30 15:20:31,992 INFO    SenderThread:2187266 [dir_watcher.py:finish():402] scan save: /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/config.yaml config.yaml
+2024-08-30 15:20:31,992 INFO    SenderThread:2187266 [dir_watcher.py:finish():402] scan save: /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/requirements.txt requirements.txt
+2024-08-30 15:20:31,992 INFO    SenderThread:2187266 [sender.py:transition_state():614] send defer: 10
+2024-08-30 15:20:31,993 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: defer
+2024-08-30 15:20:31,993 INFO    HandlerThread:2187266 [handler.py:handle_request_defer():184] handle defer: 10
+2024-08-30 15:20:31,995 DEBUG   SenderThread:2187266 [sender.py:send_request():406] send_request: defer
+2024-08-30 15:20:31,996 INFO    SenderThread:2187266 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-08-30 15:20:31,996 INFO    SenderThread:2187266 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-30 15:20:32,522 INFO    wandb-upload_2:2187266 [upload_job.py:push():130] Uploaded file /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/conda-environment.yaml
+2024-08-30 15:20:32,525 INFO    wandb-upload_1:2187266 [upload_job.py:push():130] Uploaded file /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/wandb-summary.json
+2024-08-30 15:20:32,577 INFO    wandb-upload_0:2187266 [upload_job.py:push():130] Uploaded file /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/output.log
+2024-08-30 15:20:32,601 INFO    wandb-upload_4:2187266 [upload_job.py:push():130] Uploaded file /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/requirements.txt
+2024-08-30 15:20:32,644 INFO    wandb-upload_3:2187266 [upload_job.py:push():130] Uploaded file /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/files/config.yaml
+2024-08-30 15:20:32,844 INFO    Thread-11 :2187266 [sender.py:transition_state():614] send defer: 11
+2024-08-30 15:20:32,844 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: defer
+2024-08-30 15:20:32,844 INFO    HandlerThread:2187266 [handler.py:handle_request_defer():184] handle defer: 11
+2024-08-30 15:20:32,844 DEBUG   SenderThread:2187266 [sender.py:send_request():406] send_request: defer
+2024-08-30 15:20:32,844 INFO    SenderThread:2187266 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-08-30 15:20:32,844 INFO    SenderThread:2187266 [file_pusher.py:join():175] waiting for file pusher
+2024-08-30 15:20:32,844 INFO    SenderThread:2187266 [sender.py:transition_state():614] send defer: 12
+2024-08-30 15:20:32,845 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: defer
+2024-08-30 15:20:32,845 INFO    HandlerThread:2187266 [handler.py:handle_request_defer():184] handle defer: 12
+2024-08-30 15:20:32,845 DEBUG   SenderThread:2187266 [sender.py:send_request():406] send_request: defer
+2024-08-30 15:20:32,845 INFO    SenderThread:2187266 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-08-30 15:20:32,845 INFO    SenderThread:2187266 [file_stream.py:finish():601] file stream finish called
+2024-08-30 15:20:32,866 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-30 15:20:33,045 INFO    SenderThread:2187266 [file_stream.py:finish():605] file stream finish is done
+2024-08-30 15:20:33,046 INFO    SenderThread:2187266 [sender.py:transition_state():614] send defer: 13
+2024-08-30 15:20:33,046 DEBUG   SenderThread:2187266 [sender.py:send_request():406] send_request: poll_exit
+2024-08-30 15:20:33,046 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: defer
+2024-08-30 15:20:33,046 INFO    HandlerThread:2187266 [handler.py:handle_request_defer():184] handle defer: 13
+2024-08-30 15:20:33,046 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: status_report
+2024-08-30 15:20:33,046 DEBUG   SenderThread:2187266 [sender.py:send_request():406] send_request: defer
+2024-08-30 15:20:33,046 INFO    SenderThread:2187266 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-08-30 15:20:33,046 INFO    SenderThread:2187266 [sender.py:transition_state():614] send defer: 14
+2024-08-30 15:20:33,046 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: defer
+2024-08-30 15:20:33,046 INFO    HandlerThread:2187266 [handler.py:handle_request_defer():184] handle defer: 14
+2024-08-30 15:20:33,046 DEBUG   SenderThread:2187266 [sender.py:send():379] send: final
+2024-08-30 15:20:33,046 DEBUG   SenderThread:2187266 [sender.py:send():379] send: footer
+2024-08-30 15:20:33,046 DEBUG   SenderThread:2187266 [sender.py:send_request():406] send_request: defer
+2024-08-30 15:20:33,046 INFO    SenderThread:2187266 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-08-30 15:20:33,047 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-30 15:20:33,047 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: server_info
+2024-08-30 15:20:33,047 DEBUG   SenderThread:2187266 [sender.py:send_request():406] send_request: poll_exit
+2024-08-30 15:20:33,047 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-30 15:20:33,047 DEBUG   SenderThread:2187266 [sender.py:send_request():406] send_request: server_info
+2024-08-30 15:20:33,047 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: get_summary
+2024-08-30 15:20:33,048 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: sampled_history
+2024-08-30 15:20:33,048 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-30 15:20:33,269 DEBUG   SenderThread:2187266 [sender.py:send_request():406] send_request: poll_exit
+2024-08-30 15:20:33,269 INFO    MainThread:2187266 [wandb_run.py:_footer_history_summary_info():4016] rendering history
+2024-08-30 15:20:33,269 INFO    MainThread:2187266 [wandb_run.py:_footer_history_summary_info():4048] rendering summary
+2024-08-30 15:20:33,270 INFO    MainThread:2187266 [wandb_run.py:_footer_sync_info():3975] logging synced files
+2024-08-30 15:20:33,270 DEBUG   HandlerThread:2187266 [handler.py:handle_request():158] handle_request: shutdown
+2024-08-30 15:20:33,270 INFO    HandlerThread:2187266 [handler.py:finish():882] shutting down handler
+2024-08-30 15:20:34,048 INFO    WriterThread:2187266 [datastore.py:close():296] close: /mnt/ssd2/jeong/GCU_ISNLP_B/wandb/run-20240830_152021-2dacv2w6/run-2dacv2w6.wandb
+2024-08-30 15:20:34,269 INFO    SenderThread:2187266 [sender.py:finish():1615] shutting down sender
+2024-08-30 15:20:34,269 INFO    SenderThread:2187266 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-30 15:20:34,270 INFO    SenderThread:2187266 [file_pusher.py:join():175] waiting for file pusher

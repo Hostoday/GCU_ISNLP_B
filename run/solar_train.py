@@ -196,7 +196,7 @@ def train_model(args):
         num_train_epochs=args.epoch,
         learning_rate=args.lr,
         gradient_accumulation_steps=args.gradient_accumulation_steps,
-        output_dir=f'{args.save_dir}/{args.model_id}/{datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d-%H-%M")}',
+        output_dir=f'{args.save_dir}/{args.model_id}/GCU_ISNLP_B',
         save_steps=10,  # Set a high value as the actual saving will be controlled by the callback
         
     )
