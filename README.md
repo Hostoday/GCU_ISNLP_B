@@ -61,9 +61,9 @@
   https://huggingface.co/ddobokki/electra-small-sts-cross-encoder
 
 ### Library
- python 3.9.19
- transformers 4.43.2
- trl 0.8.6
- xformers 0.0.26.post1
- torch 2.3.0
- PEFT 0.12.0
+-- python 3.9.19
+-- transformers 4.43.2
+-- trl 0.8.6
+-- xformers 0.0.26.post1
+-- torch 2.3.0
+-- PEFT 0.12.0
