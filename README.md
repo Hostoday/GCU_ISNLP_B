@@ -69,7 +69,7 @@
 - PEFT 0.12.0
 
 
-### 실행 process
+### Active process
 
 과정 요약
 1. 가상환경 설정
