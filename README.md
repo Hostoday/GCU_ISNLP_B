@@ -67,3 +67,25 @@
 - xformers 0.0.26.post1
 - torch 2.3.0
 - PEFT 0.12.0
+
+
+### 실행 process
+
+과정 요약
+1. 가상환경 설정
+2. total_sh_file.sh 실행
+
+상세 설명
+1. conda 가상환경을 설치후 activate
+    ```
+    conda env create --file environment.yaml
+    conda activate GCU_ISNLP_B
+    ```
+
+2. 각 모델들을 추론
+   ```
+   bash total_sh_file.sh
+   ```
+   -해당 스크립트 파일의 경우에는 candidate 생성 과정부터 Re-ranking과정까지 모두 포함 되어있기에 하나만 실행하면 된다.
+   -최종 출력 파일 ./inference/진짜로마지막.json 파일이 생성된다.
+   
